@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of meyer reset  */
+strong {
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(./fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family:'Sue';
+    src: url(./fonts/SueEllenFrancisco-Regular.ttf);
+}
+@font-face {
+    font-family:'Kalam';
+    src: url(./fonts/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Black.ttf);
+}
+* {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 5px #DDD;
+    min-width: 1200px;
+    min-height: 708px;
+}
+.text-2 {
+    font-size: 30px;
+}
+.mountain {
+    width: 30vw;
+    height: 90vh;
+    border-radius: 15px 0 0 15px;
+    z-index: -1;
+}
+.sidebar {
+    font-family: 'Sue';
+    font-size: 55px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    width: 30vw;
+    background-color: black;
+    opacity: .6;
+    color: white;
+    bottom: 60vh;
+    height: 80px;
+}
+.credit {
+    font-family:'Inconsolata' ;
+    position: relative;
+    word-wrap: normal;
+    bottom: 5vh;
+    left: 3vw;
+    font-weight: 100px;
+    color: white;
+}
+.header {
+    font-family: 'kalam',serif;
+    font-size: 25px;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.right {
+    min-width: 700px;
+}
+.form-container {
+    font-size: 25px;
+    font-family: 'Lato';
+    color: 	#303030;
+    max-height: 45%;
+    min-height: 45%;
+    max-width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;   
+    border-radius: 3px; 
+    border: 13px solid black;
+    flex-direction: column;
+    background-color: #FAF9F6;
+    opacity: .7;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.signup {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+.field-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input[name="info"] {
+    font-size: 18px;
+    padding: 4px;
+}
+
+label {
+    font-size: 18px;
+    color: black;
+    padding-bottom: 8px;
+}
+.field {
+    padding: 0 2rem 15px 2rem ;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.footer {
+    height: 25%;
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.submit {
+    position: absolute;
+    bottom: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create_account {
+    font-size: 18px;
+    background-color: #0092ca;
+    color: white;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    border: none;
+    transition: .2s;
+}
+.create_account:hover {
+    background-color: #007aaa;
+}
+.create_account:active {
+    transform: scale(.97);
+}
+a {
+    text-decoration: none;
+}
+.have_account {
+    padding: 15px;
+    text-decoration: none;
+}
+
+label[for="confirm_password"]::after,label[for="password"]::after,label[for="first_name"]::after,label[for="last_name"]::after,label[for="email"]::after {
+    position: relative;
+    font-size: 25px;
+    content: "*";
+    color: red;
+  }
+  .required_text {
+    position: absolute;
+    color: red;
+    font-size: 15px;
+    top: 38vh;
+    right: 22vw;
+  }
+  input:invalid {
+    border: 2px solid red;
+  }
+input[id="first_name"]:valid,input[id="last_name"]:valid,input[id="email"]:valid, input[id="password"]:valid,input[id="confirm_password"]:valid {
+    border:2px solid green;
+}
+.output {
+    position: absolute;
+    font-size: 13px;
+    color: red;
+    padding-bottom: 8px;
+    bottom: 25.3vh;
+    right: 32vh;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Sign-Up Form</title>
+</head>
+<body>
+   <div class="container">
+        <div class="left">
+            <img class="mountain" src="./images/gantavya-bhatt-dsg1et_zRYg-unsplash(1).svg">
+            <div class="sidebar">Nature!</div>
+            <div class="credit">Image credit to Gantavya Bhatt on Unsplash</div>
+        </div>
+        <div class="right">
+            <div class="header">
+                   <p class="text-1"> This is not a real online service! Signup now to go outside and join <strong> NATURE!</strong> Or don't! It doesn't really matter whether you sign up for this service or not. Its Fake! Nature isn't, however.</p>
+                   <p class="text-2"><strong>Go touch some grass!</strong></p>   
+               </div>
+            <form class="form-container">
+                <fieldset class="field-container">
+                    <legend class="signup">Sign Up Form</legend>
+                    <div class="required_text">Required *</div>
+                    <div class="field">
+                        <input type="text" id="first_name" name="info" placeholder="First Name" required>
+                        <label for="first_name">First Name</label>
+                        <span></span>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="last_name" name="info" placeholder="Last Name" required>
+                        <label for="last_name">Last Name</label>
+                        <span></span>
+                    </div>
+                    <div class="field">
+                        <input type="email" id="email" name="info" placeholder="Email" required>
+                        <label for="email">Email</label>
+                        <span></span>
+                    </div>
+                    <div class="field">
+                        <input type="tel" id="phone_number" name="info" placeholder="XXX-XXX-XXXX" pattern = '[0-9]{3}-[0-9]{3}-[0-9]{4}'>
+                        <label for="phone_number">Phone Number</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password" name="info" placeholder="Password" required>
+                        <label for="password">Password</label>
+                        <span></span>
+                    </div>
+                    <div class="field">
+                        <input type="confirm_password" id="confirm_password" name="info" placeholder="Confirm Password" required>
+                        <label for="confirm_password">Confirm Password</label>
+                        <span class="output"></span>
+                    </div>
+                    <div class="submit">
+                        <button class="create_account"> Create Account</button>
+                        <div class="have_account">Already have an account? <a href="">Log in</a></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+   </div>
+</body>
+</html>
